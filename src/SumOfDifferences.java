@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
+import static java.lang.Math.abs;
+
 public class SumOfDifferences {
     public static int sumOfDifferences(int[] arr) {
         int[] a = Arrays.stream(arr)
@@ -14,7 +16,7 @@ public class SumOfDifferences {
                 .sum();
 
 //        int sum = 0;
-//        if (arr.length == 1) return 0;
+//        if (arr.length <= 1) return 0;
 //        else
 //            for (int i = 0; i < arr.length; i++) {
 //                if(i != arr.length-1) sum -= arr[i]-arr[i+1];
