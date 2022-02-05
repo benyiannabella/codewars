@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Vowels {
 
@@ -15,7 +14,7 @@ public class Vowels {
                 .mapToObj(x-> (char)x)
                 .collect(Collectors.toList());
 
-        System.out.println(chr.toString());
+        System.out.println(chr);
         return chr.size();
     }
 
